@@ -5,11 +5,11 @@ application:
   upstreams:
     - location: /
       backend: http://portabase-app:80/
-
 services:
   db:
     # docker.io/library/postgres:16-alpine
-    image: registry.lazycat.cloud/czyt/library/postgres:da955d1f9b777e01
+    # upstream: docker.io/library/postgres:16.14-alpine3.24
+    image: registry.lazycat.cloud/czyt/library/postgres:a379d12d223884d8
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
@@ -25,10 +25,10 @@ services:
       - /lzcapp/var/data:/var/lib/postgresql/data
     cpu_shares: 512
     mem_limit: 512M
-
   portabase-app:
     # docker.io/portabase/portabase:1.2.4
-    image: registry.lazycat.cloud/czyt/solucetechnologies/portabase:86089012627fb6aa
+    # upstream: docker.io/portabase/portabase:1.28.0
+    image: registry.lazycat.cloud/czyt/portabase/portabase:25e05e96b96e5dfc
     environment:
       - TZ={{.U.timezone}}
       - NODE_ENV=production
