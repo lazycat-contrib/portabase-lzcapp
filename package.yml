@@ -1,0 +1,21 @@
+package: community.lazycat.app.portabase
+version: 1.2.4
+name: Portabase
+description: "Database backup & restore tool for PostgreSQL, MySQL/MariaDB, MongoDB"
+min_os_version: 1.5.0
+license: MIT
+homepage: https://github.com/Portabase/portabase
+author: Portabase
+
+unsupported_platforms:
+  - ios
+  - android
+  - tvos
+
+locales:
+  en:
+    name: "Portabase"
+    description: "Database backup & restore tool for PostgreSQL, MySQL/MariaDB, MongoDB"
+  zh:
+    name: "Portabase"
+    description: "适用于 PostgreSQL、MySQL/MariaDB、MongoDB 的数据库备份和恢复工具"
