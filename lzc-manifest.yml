@@ -8,8 +8,8 @@ application:
 services:
   db:
     # docker.io/library/postgres:16-alpine
-    # upstream: docker.io/library/postgres:16.14-alpine3.24
-    image: registry.lazycat.cloud/czyt/library/postgres:a379d12d223884d8
+    # upstream: docker.io/library/postgres:16.15-alpine3.24
+    image: registry.lazycat.cloud/czyt/library/postgres:9b9c5572685ea208
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
