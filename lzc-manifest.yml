@@ -27,8 +27,8 @@ services:
     mem_limit: 512M
   portabase-app:
     # docker.io/portabase/portabase:1.2.4
-    # upstream: docker.io/portabase/portabase:1.32.0
-    image: registry.lazycat.cloud/czyt/portabase/portabase:055bcf5b1d7c6513
+    # upstream: docker.io/portabase/portabase:1.33.0
+    image: registry.lazycat.cloud/czyt/portabase/portabase:9b03d94605c5ee5b
     environment:
       - TZ={{.U.timezone}}
       - NODE_ENV=production
